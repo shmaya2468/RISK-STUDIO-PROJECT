@@ -1,0 +1,9 @@
+{
+  "name": "risk-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hebrew futures risk calculator and 180-day trading discipline journal",
+  "scripts": {
+    "test": "node --test"
+  }
+}
