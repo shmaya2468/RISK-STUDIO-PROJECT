@@ -11,8 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="insights.css" />
+  <link rel="stylesheet" href="mobile-nav.css" />
   <script src="engine.js" defer></script>
   <script src="app.js" defer></script>
+  <script src="mobile-nav.js" defer></script>
 </head>
 <body>
   <div class="page-noise" aria-hidden="true"></div>
@@ -22,6 +24,7 @@
       <a href="#top" class="brand" aria-label="Futures Risk Studio — ראש הדף"><span class="brand-mark"><i></i><i></i></span><span class="brand-word" dir="ltr">RISK<span>STUDIO</span><small>FUTURES POSITION CALCULATOR</small></span></a>
       <nav aria-label="ניווט ראשי"><a href="#calculator">מחשבון</a><a href="#contracts">מפרטי חוזים</a><a href="#markets-explained">על השווקים</a><a href="#insights">מנטורים</a><a href="#guide">איך מחשבים</a><a href="discipline.html" class="nav-discipline-link">✳ משמעת ברזל</a></nav>
       <div class="nav-actions"><a href="discipline.html" class="nav-discipline-mobile" aria-label="עבור לעמוד משמעת ברזל">✳ <span>משמעת</span></a><a href="#calculator" class="nav-cta" aria-label="עבור למחשבון הסיכון"><span class="nav-cta-label">בוא נחשב עסקה</span><span class="nav-cta-arrow" aria-hidden="true">↗</span></a></div>
+      <button class="mobile-menu-toggle" type="button" aria-controls="mobile-nav-drawer" aria-expanded="false" aria-label="פתח תפריט ניווט"><span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-toggle-label">תפריט</span></button>
     </header>
 
     <main id="top">
@@ -170,6 +173,14 @@
     </main>
     <footer><div class="footer-brand">RISK<span>STUDIO</span><small>BUILT FOR TRADERS WHO PLAN FIRST.</small></div><p>המחשבון מיועד ללמידה ולניהול סיכון ואינו מהווה ייעוץ השקעות, מערכת לביצוע פקודות או התחייבות למחיר ביצוע.</p><a href="#top">בחזרה למעלה ↑</a></footer>
   </div>
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" hidden></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="תפריט ניווט" aria-hidden="true" inert>
+    <div class="mobile-drawer-top"><div class="mobile-drawer-identity"><span class="mobile-drawer-star">✳</span><span dir="ltr">RISK<span>STUDIO</span></span></div><button class="mobile-menu-close" type="button" aria-label="סגור תפריט ניווט">✕</button></div>
+    <p class="mobile-drawer-caption">THE DISCIPLINED TRADER'S EDGE</p>
+    <nav class="mobile-drawer-links" aria-label="ניווט מובייל"><a href="#calculator"><span>01</span>מחשבון סיכון <b>↗</b></a><a href="#contracts"><span>02</span>מפרטי חוזים <b>↗</b></a><a href="#markets-explained"><span>03</span>על השווקים <b>↗</b></a><a href="#insights"><span>04</span>סודות הסוחרים הגדולים <b>↗</b></a><a href="#guide"><span>05</span>איך מחשבים <b>↗</b></a></nav>
+    <a class="mobile-drawer-discipline" href="discipline.html"><span>✳</span><strong>משמעת ברזל</strong><small>180 ימים של עבודה עצמית</small><b>↗</b></a>
+    <div class="mobile-drawer-foot"><span>CONTROL THE PROCESS.</span><strong>לפני הכניסה — תבחר בעצמך.</strong></div>
+  </aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

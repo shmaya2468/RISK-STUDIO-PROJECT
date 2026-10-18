@@ -1,0 +1,52 @@
+/* Ten practical discipline principles, placed between the business mindset and daily work. */
+.iron-laws-section{position:relative;isolation:isolate;margin-top:142px;margin-bottom:136px;padding:76px 0 0;border-top:1px solid #365950;scroll-margin-top:24px}
+.iron-laws-ambient{position:absolute;pointer-events:none;z-index:-1;left:8%;right:8%;top:45px;height:480px;background:radial-gradient(ellipse at 60% 20%,#216d5740,transparent 61%),radial-gradient(ellipse at 15% 70%,#3533623f,transparent 62%);filter:blur(37px)}
+.iron-laws-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin:26px 0 49px}
+.iron-laws-overline{display:block;color:#9bc9b4;letter-spacing:2.5px;font:700 10px 'Space Grotesk',Arial,sans-serif;direction:ltr;text-align:right;margin-bottom:18px}
+.iron-laws-intro h2{font-size:clamp(52px,6.4vw,100px);letter-spacing:-3px;line-height:.99;margin:0;color:#effaf5;font-weight:800}
+.iron-laws-intro h2 em{color:#91efc2;font-style:normal}
+.iron-laws-intro>p{max-width:410px;margin:0 0 4px;font-size:16px;line-height:1.86;color:#a9bfbc}
+.iron-laws-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.iron-law-card{min-width:0;position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:310px;padding:26px 26px 23px;border:1px solid #365853;border-radius:16px;background:radial-gradient(ellipse at 0% 0%,#1e4c4161,transparent 55%),linear-gradient(150deg,#12212b,#0a151e 80%);box-shadow:0 18px 40px #0003;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.iron-law-card::before{content:'';position:absolute;top:0;right:18px;left:18px;height:1px;background:linear-gradient(90deg,transparent,#82e0bba6,transparent);opacity:.66}
+.iron-law-card:hover{transform:translateY(-5px);border-color:#76bc9b;box-shadow:0 25px 53px #0007,0 0 45px #63e9b209}
+.iron-law-top{display:flex;justify-content:space-between;align-items:center;direction:ltr;gap:10px;margin-bottom:32px}
+.iron-law-top>span{font:700 10px 'Space Grotesk',Arial,sans-serif;color:#83cbb0;letter-spacing:1.9px}
+.iron-law-top>b{height:33px;width:33px;display:grid;place-items:center;font-size:21px;color:#a4ead0;font-weight:400;border:1px solid #396b5d;border-radius:9px;background:#25534352}
+.iron-law-card h3{font-size:clamp(22px,2vw,30px);line-height:1.25;letter-spacing:-.5px;font-weight:800;color:#f2f9f4;margin:0 0 14px;max-width:450px}
+.iron-law-card h3 em{font-style:normal;color:#9af0c5}
+.iron-law-card>p{font-size:14px;line-height:1.74;color:#a3b8b9;margin:0 0 25px;max-width:430px}
+.iron-law-card details{margin-top:auto;border-top:1px solid #36534e;padding-top:14px}
+.iron-law-card summary{display:flex;align-items:center;justify-content:space-between;gap:14px;list-style:none;cursor:pointer;color:#b3e1cd;font-size:13px;font-weight:800;padding:3px 0}
+.iron-law-card summary::-webkit-details-marker{display:none}
+.iron-law-card summary span{width:25px;height:25px;display:grid;place-items:center;border:1px solid #497e70;border-radius:50%;font:500 19px/1 'Space Grotesk',Arial,sans-serif;transition:transform .2s,background .2s}
+.iron-law-card details[open] summary span{transform:rotate(45deg);background:#255641}
+.iron-law-card details>p{margin:13px 0 3px;color:#c5d9d0;font-size:13px;line-height:1.75}
+.iron-law-final{grid-column:1/-1;min-height:0;display:block;isolation:isolate;overflow:hidden;padding:35px clamp(26px,5vw,68px) 41px;border-color:#a38f5d;background:radial-gradient(ellipse at 85% 65%,#3d493437,transparent 55%),linear-gradient(110deg,#272b26,#15262a 55%,#101a20);box-shadow:0 26px 90px #0008,0 0 45px #f4d19513}
+.iron-law-final::before{background:linear-gradient(90deg,transparent,#eacc8e,transparent)}
+.iron-law-final:hover{border-color:#e9cb8d;box-shadow:0 32px 90px #0008,0 0 48px #dfbc6c21}
+.iron-law-final .iron-law-top{margin-bottom:22px}
+.iron-law-final .iron-law-top>span,.iron-law-final .iron-law-top>b{color:#ead39c}
+.iron-law-final .iron-law-top>b{border-color:#9f8651;background:#6f5f3c3d}
+.iron-law-final-orbit{position:absolute;pointer-events:none;z-index:-1;width:570px;height:570px;left:-130px;top:-220px;border:1px solid #e5c99518;border-radius:50%;box-shadow:0 0 0 80px #e5c99506,0 0 0 160px #e5c99504;transform:rotate(15deg)}
+.iron-law-final-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:30px;align-items:center}
+.iron-law-final-tag{display:block;color:#d8c18a;font:700 9px 'Space Grotesk',Arial,sans-serif;letter-spacing:2px;margin-bottom:17px;direction:ltr;text-align:right}
+.iron-law-final h3{font-size:clamp(52px,6vw,97px);line-height:1.02;letter-spacing:-3px;margin:0;color:#f9f6e9}
+.iron-law-final h3 em{color:#e8ca8d}
+.iron-law-final-detail>p{color:#c6cbc1;font-size:16px;line-height:1.83;margin:0 0 20px}
+.iron-law-final-detail>strong{display:block;color:#f1d79a;font-size:18px;line-height:1.57;margin-bottom:25px}
+.iron-law-final details{border-top-color:#9b885e70}
+.iron-law-final summary{color:#f2d797}
+.iron-law-final summary span{border-color:#a58d60}
+.iron-law-final details>p{color:#ebdfc4}
+.iron-laws-exit{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:22px;padding:33px 38px;border:1px solid #436b5b;border-radius:14px;background:linear-gradient(115deg,#12282a,#0b181c)}
+.iron-laws-exit>div{display:grid;gap:8px}
+.iron-laws-exit>div>span{color:#8cc1a9;font:700 10px 'Space Grotesk',Arial,sans-serif;letter-spacing:1.8px;direction:ltr;text-align:right}
+.iron-laws-exit strong{font-size:24px;line-height:1.33;color:#f1f7f2}
+.iron-laws-exit strong em{font-style:normal;color:#a5f0c2}
+.iron-laws-exit>a{display:inline-flex;align-items:center;justify-content:center;gap:20px;flex-shrink:0;padding:15px 22px;border:1px solid #83cfaa;border-radius:10px;background:#25664e;color:#e4ffec;font-size:13px;font-weight:800;transition:background .2s,transform .2s}
+.iron-laws-exit>a:hover{background:#31765d;transform:translateY(-2px)}
+@media(max-width:1180px){.iron-laws-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.iron-laws-intro h2{font-size:70px}.iron-law-card{min-height:290px}.iron-law-final-content{grid-template-columns:1fr 1fr}}
+@media(max-width:820px){.iron-laws-intro{display:block}.iron-laws-intro>p{max-width:700px;margin-top:22px}.iron-laws-section{margin-top:100px;margin-bottom:95px;padding-top:61px}.iron-laws-exit{padding:26px;gap:18px}.iron-laws-exit strong{font-size:21px}}
+@media(max-width:600px){.iron-laws-grid{grid-template-columns:1fr;gap:12px}.iron-laws-intro{margin:23px 0 29px}.iron-laws-intro h2{font-size:clamp(47px,11vw,68px);letter-spacing:-1.8px}.iron-laws-intro>p{font-size:14px;line-height:1.7}.iron-law-card{min-height:0;padding:23px 22px 20px;border-radius:13px}.iron-law-top{margin-bottom:19px}.iron-law-card h3{font-size:26px}.iron-law-card>p{font-size:13px;margin-bottom:24px}.iron-law-final{padding:25px 21px 27px}.iron-law-final-content{grid-template-columns:1fr;gap:19px}.iron-law-final h3{font-size:clamp(53px,13.4vw,75px)}.iron-law-final-detail>p{font-size:14px}.iron-law-final-detail>strong{font-size:16px}.iron-law-final .iron-law-top{margin-bottom:12px}.iron-laws-exit{flex-direction:column;align-items:stretch;padding:24px 21px}.iron-laws-exit strong{font-size:21px}.iron-laws-exit>a{width:100%;padding:15px}}
+@media(prefers-reduced-motion:reduce){.iron-law-card,.iron-laws-exit>a,.iron-law-card summary span{transition:none!important}}
