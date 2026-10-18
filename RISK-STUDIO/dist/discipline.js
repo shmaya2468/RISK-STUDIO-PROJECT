@@ -348,7 +348,7 @@
     if (remaining > 0) return;
     stopTimer();
     pauseStart.disabled = false;
-    pauseStart.textContent = 'עצור שוב בעת הצורך ↗';
+    pauseStart.textContent = 'עצור שוב בעת הצורך';
     pauseStatus.textContent = 'סיימת 90 שניות. עכשיו תחליט רק לפי הכללים שלך — ואם אין סט־אפ, אין חובה להיכנס.';
     notify('העצירה הסתיימה. תן לתוכנית להחליט.');
   }
@@ -367,7 +367,7 @@
     stopTimer();
     deadline = 0;
     pauseStart.disabled = false;
-    pauseStart.innerHTML = 'הפעל עצירת FOMO <span>↗</span>';
+    pauseStart.textContent = 'הפעל עצירת FOMO';
     pauseReset.hidden = true;
     pauseTimer.textContent = '01:30';
     pauseStatus.textContent = 'עצור, נשום, קח את היד מהעכבר. שאל אם העסקה באמת בתוכנית.';

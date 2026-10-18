@@ -1,0 +1,147 @@
+/* RISK STUDIO / visual identity, tactile mobile controls & footer */
+
+/* The same original twin-bar RISK STUDIO mark is used on both pages. */
+.discipline-nav .brand-mark{
+  position:relative;display:grid;place-items:center;height:43px;width:43px;
+  flex:0 0 43px;border:1px solid #4cbca7;border-radius:11px;
+  background:linear-gradient(145deg,#123b39,#0d222d);
+  box-shadow:0 0 28px #29beab20;overflow:hidden;
+}
+.discipline-nav .brand-mark i{
+  height:21px;width:7px;border-radius:2px;background:#75ffd1;position:absolute;
+  transform:skew(-23deg);box-shadow:0 0 10px #71ffc768;
+}
+.discipline-nav .brand-mark i:first-child{left:14px;top:9px}
+.discipline-nav .brand-mark i:last-child{left:23px;top:13px;height:17px;background:#286d69}
+.discipline-nav .brand-word{font:700 23px/1 'Space Grotesk',Arial,sans-serif;letter-spacing:-1.5px;white-space:nowrap}
+.discipline-nav .brand-word>span{color:#65f0c1}
+.discipline-nav .brand-word small{display:block;font:500 8px 'Space Grotesk',Arial,sans-serif;letter-spacing:1.6px;color:#879eae;margin-top:7px}
+
+/* Keep navigation deliberately restrained; never rely on emoji-style arrows. */
+.nav-premium-dot{display:inline-block;width:7px;height:7px;border-radius:2px;
+  transform:rotate(45deg);background:#86e6bb;box-shadow:0 0 12px #7cfbc35c;margin-left:5px}
+.cta-line-icon{display:inline-flex;align-items:center;justify-content:center;min-width:19px;height:19px;margin-inline-start:10px}
+.cta-line-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.cta-line-icon svg path{vector-effect:non-scaling-stroke}
+.primary-cta:hover .cta-line-icon{transform:translateX(-3px);transition:transform .25s}
+.nav-row-indicator{display:block;flex:0 0 8px;width:8px;height:8px;margin-right:auto;
+  border-top:1.5px solid #a9e9ce;border-left:1.5px solid #a9e9ce;transform:rotate(-45deg);
+  opacity:.64;transition:transform .2s,opacity .2s}
+.mobile-drawer-links a:hover .nav-row-indicator,.mobile-drawer-links a:focus-visible .nav-row-indicator{
+  opacity:1;transform:translateX(-4px) rotate(-45deg)
+}
+.mobile-drawer-links a{min-height:50px}
+.mobile-drawer-links a:focus-visible{outline-offset:-2px}
+.mobile-drawer-star.brand-bars,.poster-logo.brand-bars{position:relative;flex-shrink:0}
+.brand-bars>i{position:absolute;width:6px;height:18px;top:10px;left:13px;
+  background:#7bffd5;border-radius:2px;transform:skew(-23deg);box-shadow:0 0 9px #71ffc766}
+.brand-bars>i+ i{height:15px;top:13px;left:22px;background:#378b79}
+.mobile-drawer-star.brand-bars{background:linear-gradient(145deg,#123b39,#0d222d)}
+.drawer-shield{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;
+  border:1px solid #78d3a5;background:#163d32}
+.drawer-shield svg,.premium-emblem svg{width:25px;height:25px;fill:none;stroke:#aaffd2;
+  stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.mobile-drawer-discipline .drawer-shield{grid-row:1/3}
+.mobile-drawer-discipline .drawer-shield svg{width:22px;height:22px}
+.mobile-drawer-discipline>b{font:700 20px 'Space Grotesk',Arial,sans-serif}
+.mobile-drawer-discipline>b:empty{display:none}
+.mobile-drawer-discipline{grid-template-columns:39px minmax(0,1fr)}
+.mobile-drawer-discipline>b{display:none}
+.premium-emblem{display:grid;place-items:center}
+.premium-emblem svg{max-width:100%;height:auto}
+.portal-arrow svg{height:20px;width:20px;fill:none;stroke:currentColor;
+  stroke-linejoin:round;stroke-linecap:round;stroke-width:1.75}
+
+/* A quiet animated shield replaces the asterisk on the 180-day challenge CTA. */
+.hero-discipline-pill{position:relative;overflow:hidden;display:inline-flex;align-items:center;
+  gap:11px;min-height:47px;padding:7px 14px;
+  background:linear-gradient(110deg,#493b295c,#182a2b9e);
+  border-color:#9e8b66;box-shadow:inset 0 1px #e8d5a814,0 5px 24px #0002}
+.hero-discipline-pill:after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(100deg,transparent 30%,#e4d8ba0e 52%,transparent 75%);
+  transform:translateX(140%);animation:polish-sheen 8s ease-in-out infinite}
+.hero-discipline-pill .discipline-pill-text{font:800 12px/1.5 'Assistant',Arial,sans-serif;
+  color:#f5ddb0;margin:0!important}
+.discipline-pill-icon{position:relative;display:grid;place-items:center;flex:0 0 29px;
+  width:29px;height:29px;border-radius:9px;border:1px solid #bb9970;
+  background:#6e5a3761;margin:0!important;animation:polish-shield 4s ease-in-out infinite}
+.discipline-pill-icon svg{width:21px;height:21px;fill:none;stroke:#fbe3ab;
+  stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hero-discipline-pill .pill-detail{display:block;flex:0 0 22px!important;height:2px;
+  margin:0 0 0 3px!important;border-radius:10px;
+  background:linear-gradient(90deg,transparent,#f6cf86);opacity:.8}
+@keyframes polish-shield{0%,100%{box-shadow:0 0 0 0 #e0c38200}50%{box-shadow:0 0 0 5px #e0c38217,0 0 22px #f1c7791d}}
+@keyframes polish-sheen{0%,65%,100%{transform:translateX(140%)}82%{transform:translateX(-140%)}}
+.risk-direction-dot{float:left;width:9px;height:9px;margin:5px 2px;
+  border:2px solid #ff929c;border-radius:50%;box-shadow:0 0 0 4px #ff9ba517}
+
+/* Carefully controlled monochrome chart/detail marks. */
+.ticker-ribbon .ribbon-separator,.mantra-ribbon .ribbon-separator{display:block;flex:0 0 4px;
+  height:4px;width:4px;border-radius:50%;background:#64a995;opacity:.8;align-self:center}
+.section-kicker .section-mark{display:inline-grid;place-items:center}
+.section-kicker .section-mark svg{height:17px;width:17px;stroke:#a8f3cd;fill:none;
+  stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.poster-logo.brand-bars{display:inline-grid!important;place-items:center}
+.poster-logo.brand-bars>i{left:calc(50% - 11px);top:calc(50% - 10px)}
+.poster-logo.brand-bars>i+ i{left:calc(50% + 1px);top:calc(50% - 7px)}
+.path-icon svg{display:block;width:23px;height:23px;fill:none;stroke:currentColor;
+  stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.path-icon-positive{background:#1b574235;box-shadow:0 0 25px #79eeb41b}
+.path-icon-negative{background:#60344235;box-shadow:0 0 25px #f58c9514}
+.future-path .future-label{align-items:center}
+.article-more summary b{border:1px solid #3f806e;border-radius:8px;width:26px;height:26px;
+  display:grid;place-items:center;font:400 19px/1 'Space Grotesk',sans-serif;
+  transition:background .22s,transform .22s}
+.article-more[open] summary b{transform:rotate(45deg);background:#204b3f}
+
+/* Accessible, polished small-screen layouts. */
+@media(max-width:1080px){
+  .navbar .nav-actions,.discipline-nav .top-action{display:none!important}
+  .navbar,.discipline-nav{justify-content:space-between}
+}
+@media(max-width:720px){
+  .discipline-nav .brand-mark{height:34px;width:34px;flex-basis:34px;border-radius:9px}
+  .discipline-nav .brand-mark i:first-child{left:10px;top:6px}
+  .discipline-nav .brand-mark i:last-child{left:20px;top:10px}
+  .discipline-nav .brand-word{font-size:18px;letter-spacing:-1px}
+  .discipline-nav .brand-word small{display:none}
+  .navbar,.discipline-nav{gap:10px}
+  .market-grid .market-option{min-height:73px}
+  .hero-discipline-pill{max-width:100%;gap:8px}
+  .hero-discipline-pill .discipline-pill-text{font-size:12px!important}
+  .hero-discipline-pill .pill-detail{flex-basis:12px!important}
+  .cta-line-icon{min-width:16px;height:16px}
+  .cta-line-icon svg{width:16px;height:16px}
+}
+@media(max-width:390px){
+  .discipline-nav .brand-word,.navbar .brand-word{font-size:16px;letter-spacing:-1px}
+  .hero-discipline-pill{padding:7px 10px}
+  .hero-discipline-pill .discipline-pill-text{font-size:11px!important}
+  .mobile-drawer-discipline{padding:15px 11px}
+}
+
+/* Legal/contact panel, including compact readable tap target on mobile. */
+.footer-copy{flex:1;min-width:0;max-width:760px;display:flex;flex-direction:column;gap:12px}
+.footer-copy>p{margin:0;line-height:1.7}
+.footer-meta{display:flex;align-items:center;justify-content:space-between;
+  gap:11px 21px;flex-wrap:wrap;font:600 12px/1.5 'Assistant',Arial,sans-serif;
+  color:#90aca9}
+.footer-meta>span{white-space:normal}
+.footer-mail{max-width:100%;display:inline-flex;align-items:center;gap:9px;min-height:40px;
+  padding:8px 12px;border:1px solid #3b7865a8;border-radius:10px;
+  background:#17403444;color:#bdf2d6;font-size:12px;transition:background .25s,border-color .25s}
+.footer-mail:hover,.footer-mail:focus-visible{background:#205341;border-color:#7feac0;color:#edfff7}
+.footer-mail svg{flex-shrink:0;width:16px;height:16px;fill:none;stroke:currentColor;
+  stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.footer-mail span{line-height:1.5;overflow-wrap:anywhere}
+.footer-mail b{font-weight:700;unicode-bidi:isolate}
+@media(max-width:720px){
+  .footer-copy{width:100%;max-width:100%}
+  .footer-meta{width:100%;flex-direction:column;align-items:flex-start;gap:11px}
+  .footer-mail{min-height:46px}
+  .footer-copy>p{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-discipline-pill:after,.discipline-pill-icon{animation:none!important}
+  .nav-row-indicator,.article-more summary b{transition:none!important}
+}

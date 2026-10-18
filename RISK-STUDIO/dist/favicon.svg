@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">RISK STUDIO</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#163d3b"/><stop offset="1" stop-color="#0a1723"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a8ffe0"/><stop offset="1" stop-color="#41cfaa"/></linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="29" fill="url(#bg)" stroke="#54ad9c" stroke-width="5"/>
+  <path d="M40 93 63 33" stroke="url(#a)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M75 91 91 47" stroke="#328579" stroke-width="17" stroke-linecap="round"/>
+  <path d="M91 47 98 31" stroke="#8becc6" stroke-width="7" stroke-linecap="round" opacity=".72"/>
+</svg>

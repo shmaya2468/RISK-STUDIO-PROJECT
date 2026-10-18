@@ -1,6 +1,12 @@
 (() => {
   'use strict';
 
+  // Keep the legal footer current without changing saved journal or challenge data.
+  const year = String(new Date().getFullYear());
+  document.querySelectorAll?.('[data-copyright-year]').forEach(node => {
+    node.textContent = year;
+  });
+
   const toggle = document.querySelector('.mobile-menu-toggle');
   const drawer = document.getElementById('mobile-nav-drawer');
   const backdrop = document.getElementById('mobile-nav-backdrop');
